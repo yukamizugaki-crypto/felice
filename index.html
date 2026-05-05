@@ -498,6 +498,19 @@
         }
 
         /* Online Shop */
+        .onlineshop-section {
+            background-color: var(--accent-pink);
+            padding: 120px 0;
+            width: 100%;
+        }
+
+        .onlineshop-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
         .onlineshop-content p {
             margin-bottom: 40px;
             font-size: 16px;
@@ -582,6 +595,7 @@
 
         .info-map {
             flex: 1;
+            display: flex;
             min-height: 350px;
             padding: 12px;
             border: 1px solid rgba(74, 51, 32, 0.3);
@@ -617,8 +631,11 @@
         }
 
         .map-antique {
+            flex: 1;
             width: 100%;
             height: 100%;
+            min-height: 300px;
+            border: none;
             filter: sepia(0.5) hue-rotate(-15deg) contrast(0.95) opacity(0.9);
         }
 
@@ -662,6 +679,11 @@
 
             .section {
                 padding: 80px 20px;
+            }
+
+            .menu-section,
+            .onlineshop-section {
+                padding: 80px 0;
             }
 
             .catchphrase {
@@ -826,13 +848,15 @@
         </section>
 
         <!-- Online Shop Section -->
-        <section id="onlineshop" class="onlineshop section">
-            <h2 class="section-title">Online Shop</h2>
-            <div class="onlineshop-content">
-                <p>Feliceのやさしいお菓子を、オンラインでもお求めいただけます。<br class="pc-only">大切な方への贈り物や、ご自宅での特別なひとときに。</p>
-                <a href="https://felicecake.base.shop/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnlm0cPPW1u7vJqq6OcJUJHg-ROyxPK8o640z6GAegElrwCbW5tdOKFG9Ti5o_aem_QE90U1H8O_bgTaUyUH7TVw" target="_blank" class="btn-antique">
-                    <span>オンラインショップへ</span>
-                </a>
+        <section id="onlineshop" class="onlineshop-section">
+            <div class="onlineshop-container">
+                <h2 class="section-title">Online Shop</h2>
+                <div class="onlineshop-content">
+                    <p>Feliceのやさしいお菓子を、オンラインでもお求めいただけます。<br class="pc-only">大切な方への贈り物や、ご自宅での特別なひとときに。</p>
+                    <a href="https://felicecake.base.shop/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnlm0cPPW1u7vJqq6OcJUJHg-ROyxPK8o640z6GAegElrwCbW5tdOKFG9Ti5o_aem_QE90U1H8O_bgTaUyUH7TVw" target="_blank" class="btn-antique">
+                        <span>オンラインショップへ</span>
+                    </a>
+                </div>
             </div>
         </section>
 
