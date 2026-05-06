@@ -317,6 +317,39 @@
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
         }
 
+        .scroll-indicator {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: rgba(255, 255, 255, 0.9);
+            font-family: var(--font-heading);
+            font-size: 14px;
+            letter-spacing: 0.1em;
+            z-index: 10;
+            text-shadow: 0 2px 4px rgba(74, 51, 32, 0.5);
+        }
+
+        .scroll-indicator .arrow {
+            margin-top: 4px;
+            font-size: 18px;
+            animation: scrollDown 2s infinite ease-in-out;
+        }
+
+        @keyframes scrollDown {
+            0%, 100% {
+                transform: translateY(0);
+                opacity: 0.8;
+            }
+            50% {
+                transform: translateY(8px);
+                opacity: 1;
+            }
+        }
+
         /* Concept */
         .concept {
             max-width: 800px;
@@ -777,7 +810,10 @@
             </div>
             <h1 class="hero-title">Felice</h1>
 
-
+            <div class="scroll-indicator">
+                <span>scroll</span>
+                <span class="arrow">↓</span>
+            </div>
         </section>
 
         <!-- Concept Section -->
