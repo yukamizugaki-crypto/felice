@@ -289,21 +289,19 @@
             height: 100%;
             object-fit: cover;
             opacity: 0;
-            animation: hero-fade 18s infinite;
+            animation: hero-fade 12s infinite;
         }
 
         .hero-img:nth-child(1) { animation-delay: 0s; }
         .hero-img:nth-child(2) { animation-delay: 3s; }
         .hero-img:nth-child(3) { animation-delay: 6s; }
         .hero-img:nth-child(4) { animation-delay: 9s; }
-        .hero-img:nth-child(5) { animation-delay: 12s; }
-        .hero-img:nth-child(6) { animation-delay: 15s; }
 
         @keyframes hero-fade {
             0% { opacity: 0; }
-            8.33% { opacity: 1; }
-            16.66% { opacity: 1; }
-            25.00% { opacity: 0; }
+            8% { opacity: 1; }
+            25% { opacity: 1; }
+            33% { opacity: 0; }
             100% { opacity: 0; }
         }
 
@@ -469,6 +467,13 @@
             font-size: 16px;
             margin-bottom: 30px;
             line-height: 2;
+        }
+
+        .menu-btns {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
         }
 
         /* About */
@@ -804,8 +809,6 @@
                     <img src="top2.jpg" alt="Felice 2" class="hero-img" loading="lazy">
                     <img src="top3.png" alt="Felice 3" class="hero-img" loading="lazy">
                     <img src="top4.jpg" alt="Felice 4" class="hero-img" loading="lazy">
-                    <img src="top5.png" alt="Felice 5" class="hero-img" loading="lazy">
-                    <img src="top6.png" alt="Felice 6" class="hero-img" loading="lazy">
                 </div>
             </div>
             <h1 class="hero-title">Felice</h1>
@@ -854,9 +857,14 @@
 
                 <div class="menu-footer-link">
                     <p>その他様々な商品をご用意しております。<br>詳しくはInstagramをご覧ください。</p>
-                    <a href="https://www.instagram.com/felice.chiffon/" target="_blank" class="btn-antique">
-                        <span>Instagramを見る</span>
-                    </a>
+                    <div class="menu-btns">
+                        <a href="https://www.instagram.com/felice.chiffon/" target="_blank" class="btn-antique">
+                            <span>Instagramを見る</span>
+                        </a>
+                        <a href="taruto.jpg" target="_blank" class="btn-antique">
+                            <span>タルト一覧を見る</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -878,7 +886,7 @@
                     <p>「日常に小さな特別を届けたい」<br>そんな想いから、このお店を始めました。</p>
                     <p>ABC Cooking Studioにて、製菓・パン・料理の講師を務めた経験を活かし、<br>素材の風味を大切にしたシンプルなお菓子づくりを大切にしています。</p>
                     <p>また、4人の母としての目線から、<br>ご家族みなさまで安心して楽しんでいただける、<br>やさしく飽きのこない味わいを心がけています。</p>
-                    <p>ご自宅でのひとときにも、大切な方への贈りものにも。<br>日常にそっと寄り添うお菓子を、これからも丁寧にお届けしていきます。</p>
+                    <p>ご自宅でのひとときにも、<br>大切な方への贈りものにも。<br>日常にそっと寄り添うお菓子を、これからも丁寧にお届けしていきます。</p>
                 </div>
             </div>
         </section>
@@ -904,7 +912,7 @@
                     <div class="info-shop-name">Felice</div>
                     <dl>
                         <dt>Address</dt>
-                        <dd>〒252-0134<br>神奈川県相模原市緑区下九沢2391-14</dd>
+                        <dd>〒252-0134<br>神奈川県相模原市緑区<br class="sp-only">下九沢2391-14</dd>
 
                         <dt>Tel</dt>
                         <dd>042-713-1732</dd>
