@@ -476,15 +476,27 @@
         }
 
         .menu-btns {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px 15px;
+            max-width: 500px;
+            margin: 0 auto;
         }
 
         .menu-btns .btn-antique {
-            padding: 10px 25px;
+            padding: 12px 15px;
             font-size: 14px;
+            box-sizing: border-box;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            min-height: 50px;
+        }
+
+        .menu-btns .btn-antique:nth-child(1) {
+            grid-column: span 2;
         }
 
         /* About */
@@ -744,6 +756,19 @@
                 gap: 15px;
             }
 
+            .menu-btns {
+                gap: 12px 10px;
+                max-width: 100%;
+            }
+
+            .menu-btns .btn-antique {
+                font-size: clamp(10px, 3.1vw, 13px);
+                letter-spacing: 0.02em;
+                padding: 10px 4px;
+                min-height: 46px;
+                white-space: nowrap;
+            }
+
             .frame-simple {
                 padding: 8px;
                 /* スマホ時は余白を少し減らして画像を大きく */
@@ -893,6 +918,9 @@
                         <a href="コッペサンド.jpg" target="_blank" class="btn-antique">
                             <span>コッペサンドを見る</span>
                         </a>
+                        <a href="デコレーションケーキ.mp4" target="_blank" class="btn-antique">
+                            <span>デコレーションケーキを見る</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -912,10 +940,11 @@
                     </div>
                 </div>
                 <div class="about-text">
-                    <p>「日常に小さな特別を届けたい」<br>そんな想いから、このお店を始めました。</p>
-                    <p>ABC Cooking Studioにて、製菓・パン・料理の講師を務めた経験を活かし、<br>素材の風味を大切にしたシンプルなお菓子づくりを大切にしています。</p>
-                    <p>また、4人の母としての目線から、<br>ご家族みなさまで安心して楽しんでいただける、<br>やさしく飽きのこない味わいを心がけています。</p>
-                    <p>ご自宅でのひとときにも、<br>大切な方への贈りものにも。<br>日常にそっと寄り添うお菓子を、これからも丁寧にお届けしていきます。</p>
+                    <p>「日常に、小さな特別を。」<br>その想いを原点に、このお店は生まれました。</p>
+                    <p>ABC Cooking Studioにて製菓・パン・料理の講師として培った経験を活かし、<br class="pc-only">素材本来の風味を大切にした、シンプルで心に残るお菓子づくりを追求しています。</p>
+                    <p>また、四児の母としての視点から、家族みんなが安心して楽しめる、<br class="pc-only">やさしく飽きのこない味わいを大切にしています。</p>
+                    <p>ご自宅で過ごす穏やかなひとときに。<br>大切な方への贈りものに。</p>
+                    <p>日常にそっと寄り添い、ふとした瞬間を少しだけ特別にするお菓子を、<br class="pc-only">これからも一つひとつ丁寧にお届けしてまいります。</p>
                 </div>
             </div>
         </section>
